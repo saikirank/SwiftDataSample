@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7CFF8092DB3644000495200 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFF8082DB3644000495200 /* Destination.swift */; };
+		F7CFF80D2DB39D4900495200 /* EditDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFF80C2DB39D4900495200 /* EditDestination.swift */; };
 		F7D210722DB2D003000555CC /* SwiftDataSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D210712DB2D003000555CC /* SwiftDataSampleApp.swift */; };
 		F7D210742DB2D003000555CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D210732DB2D003000555CC /* ContentView.swift */; };
 		F7D210762DB2D007000555CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D210752DB2D007000555CC /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7CFF8082DB3644000495200 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		F7CFF80C2DB39D4900495200 /* EditDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestination.swift; sourceTree = "<group>"; };
 		F7D2106E2DB2D003000555CC /* SwiftDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D210712DB2D003000555CC /* SwiftDataSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSampleApp.swift; sourceTree = "<group>"; };
 		F7D210732DB2D003000555CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				F7D210712DB2D003000555CC /* SwiftDataSampleApp.swift */,
 				F7D210732DB2D003000555CC /* ContentView.swift */,
+				F7CFF80C2DB39D4900495200 /* EditDestination.swift */,
+				F7CFF8082DB3644000495200 /* Destination.swift */,
 				F7D210752DB2D007000555CC /* Assets.xcassets */,
 				F7D210772DB2D007000555CC /* Preview Content */,
 			);
@@ -95,7 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					F7D2106D2DB2D003000555CC = {
 						CreatedOnToolsVersion = 15.4;
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CFF80D2DB39D4900495200 /* EditDestination.swift in Sources */,
 				F7D210742DB2D003000555CC /* ContentView.swift in Sources */,
+				F7CFF8092DB3644000495200 /* Destination.swift in Sources */,
 				F7D210722DB2D003000555CC /* SwiftDataSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +188,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J5XRY8BQSV;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -243,6 +252,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J5XRY8BQSV;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -272,7 +282,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataSample/Preview Content\"";
-				DEVELOPMENT_TEAM = J5XRY8BQSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +310,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataSample/Preview Content\"";
-				DEVELOPMENT_TEAM = J5XRY8BQSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
