@@ -13,8 +13,14 @@ struct DestinationListView: View {
     @Environment(\.modelContext) var modelContext
 
 
-    init(sort: SortDescriptor<Destination>) {
-        _destinations = Query(sort: [sort])
+    init(sort: SortDescriptor<Destination>, searchText: String) {
+        _destinations = Query( filter: #Predicate {
+            if searchText.isEmpty {
+                return true
+            } else {
+                return $0.name.localizedStandardContains(searchText)
+            }
+        } , sort: [sort])
     }
     var body: some View {
         List {
@@ -44,5 +50,5 @@ struct DestinationListView: View {
 }
 
 #Preview {
-    DestinationListView(sort: SortDescriptor(\Destination.name))
+    DestinationListView(sort: SortDescriptor(\Destination.name), searchText: "")
 }

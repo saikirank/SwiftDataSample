@@ -12,10 +12,12 @@ struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @State var path: [Destination] = []
     @State private var sortOrder = SortDescriptor(\Destination.name)
+    @State private var searchText: String = ""
     var body: some View {
         NavigationStack(path: $path, root: {
-            DestinationListView(sort: sortOrder)
+            DestinationListView(sort: sortOrder, searchText: searchText)
             .navigationBarTitle("Destinations")
+            .searchable(text: $searchText)
                 .toolbar {
                     Button("Add", systemImage: "plus", action: add)
                     Menu("Sort", systemImage: "arrow.up.arrow.down") {
